@@ -54,15 +54,8 @@ public class RegistroSteps{
 	@Then("The box that shows us that the registration has been successful is displayed")
 	public void the_box_that_shows_us_that_the_registration_has_been_successful_is_displayed() {
 	    
-		try{
-		    driver.switchTo().alert();
-		    System.out.println("El pop-up de registro exitoso se ha visualizado correctamente");
-		   
-		} catch(NoAlertPresentException e){
-			
-			System.out.println("El pop-up de registro exitoso no se ha visualizado");
-			
-		}
+		driver.switchTo().alert();
+
 		
 		driver.quit();
 		
